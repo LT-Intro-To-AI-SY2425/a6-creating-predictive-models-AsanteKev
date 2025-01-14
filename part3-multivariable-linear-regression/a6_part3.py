@@ -25,8 +25,9 @@ print("R Squared value:", r_squared)
 
 #Loop through the data and print out the predicted prices and the 
 #actual prices
+print("Testing Results")
 
 for i in range(len(xtest)):
     actual = ytest[i]
     predicted = model.predict([xtest[i]])
-    print('Miles:', {xtest[i][0]}, 'Age:', {xtest[i][1]} 'Actual:' {actual} 'Predicted:' {predicted[0]})
+    print('Miles:', {xtest[i][0]}, 'Age:', {xtest[i][1]} 'Actual:', {actual[0]} 'Predicted:', {predicted[i]})
